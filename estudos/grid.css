@@ -30,6 +30,16 @@ header {
     (abreviação de grid-column-start e grid-column-end) */
 }
 
+header button {
+    margin-top:10vh;
+    transition: 0.5s;
+}
+
+
+header button:hover {
+    transform: translateY(-50%);
+}
+
 main {
     background: blue;
 
