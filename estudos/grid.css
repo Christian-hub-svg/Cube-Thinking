@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #7159c1;
+}
+
+.container {
+    display: grid; /*Iniciando a grid*/
+    grid-template-columns: 3fr 1fr; /*Definindo quantas colunas e o tamanho delas*/
+    grid-template-rows: 20vh 70vh 10vh; /*Definindo quantas linhas e o tamanho delas*/
+
+    /* grid-gap: 20px; Espaços entre os grids (abreviação de grid-row-gap e grid-column-gap */
+
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+    /*O templete areas faz o papel do grid-column dentro dos itens, como se fosse uma tabela. 
+    Porém deve-se definir o nome dentro dos itens com grid-area*/
+}
+
+header {
+    background: yellow;
+
+    grid-area: h;
+    
+    /* grid-column: 1/3;
+    grid-row: 1/2;
+    /*
+    Definimos aqui em que linha o grid do header começa e termina
+    (abreviação de grid-column-start e grid-column-end) */
+}
+
+main {
+    background: blue;
+
+    grid-area: m;
+
+}
+
+aside {
+    background: green;
+
+    grid-area: a;
+
+}
+
+footer {
+    background: red;
+
+    grid-area: f;
+
+}

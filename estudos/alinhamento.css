@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    /* justify-content: start; coloca o grid no começo da tela (esquerda)
+    justify-content: center; coloca o grid no meio da tela 
+    justify-content: end; coloca o grid no final da tela (direita)
+    justify-content: stretch; coloca o grid 
+    justify-content: space-between; distribui o grid por toda a tela com um espaçamento igual entre os grids
+    justify-content: space-around; distribui o grid por toda a tela com um espaçamento igual ao redor dos grids
+    justify-content: space-evenly; distribui o grid por toda a tela com um espaçamento igual ao redor e entre os grids*/
+
+    /* align-content: start; coloca o grid no começo da tela (cima)
+    align-content: center; coloca o grid no meio da tela 
+    align-content: end; coloca o grid no final da tela (baixo)
+    align-content: stretch; coloca o grid 
+    align-content: space-between; distribui o grid por toda a tela com um espaçamento igual entre os grids
+    align-content: space-around; distribui o grid por toda a tela com um espaçamento igual ao redor dos grids
+    align-content: space-evenly; distribui o grid por toda a tela com um espaçamento igual ao redor e entre os grids*/
+
+    /* O JUSTIFY É HORIZONTAL E O ALIGN É VERTICAL */
+
+    /* justify-items:center;
+    align-items:center;
+    funciona do mesmo jeito, só que com os itens de dentro da célula, e não com a grid toda */
+
+
+}
+
+.container > div{
+    background: #7159c1;
+    width: 50%;
+    height: 50%;
+
+    /* justify-self: center;
+    align-self: center;
+    funciona de maneira parecida, mas fica dentro de cada item */
+}
