@@ -35,7 +35,6 @@ header button {
     transition: 0.5s;
 }
 
-
 header button:hover {
     transform: translateY(-50%);
 }
