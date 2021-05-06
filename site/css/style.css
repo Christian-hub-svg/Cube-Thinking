@@ -257,7 +257,7 @@ body{
 
 /* CURIOSIDADES */
 .div_curiosidades{
-    height: 90vh;
+    height: 110vh;
 }
 
 .titulo .linha_verde{
@@ -299,6 +299,11 @@ body{
 .c_individual p{
     font-weight: 300;
     font-size: 1rem;
+}
+
+.c_individual img{
+    height: 20vh;
+    padding-top: 1vh;
 }
 
 .curiosidade1{

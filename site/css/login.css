@@ -1,0 +1,55 @@
+.div_img{
+    height: 80vh;
+}
+
+.div_img .selected{
+    background-color: #EE7A26;
+}
+
+.div_login{
+    background-color: white;
+    box-shadow: 1px 1px 15px #202020;
+    height: 50vh;
+    width: 40vw;
+    margin: 5vh auto;
+}
+
+.container_login{
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.container_login h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+.container_login input{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-style: italic;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-top: 2vh;
+    padding: 0.5vh 1vw;
+}
+
+.container_login button{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1vh 3vw;
+    margin-top: 5vh;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container_login button:hover{
+    background: #EE7A26;
+}
