@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Rubik', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(../img/fundo-quiz.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.geral{
+    width: 50%;
+    height: 500vh;
+    margin: 10vh auto;
+    background: #f1f1f1;
+    border-radius: 2rem;
+}
+
+/* INTRODUÇÃO */
+.container_intro{
+    text-align: center;
+    padding-top: 5vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container_intro img{
+    height: 16vh;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+.container_intro img:hover{
+    height: 17vh;
+}
+
+.container_intro h1{
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: 2vh 0;
+}
+
+.container_intro h2{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+/* PERGUNTAS */
+.container_p{
+    max-width: 80%;
+    margin: 5vh auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.pergunta h1{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 2vh 0;
+}
+
+.pergunta button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1vh 1vw;
+    width: 40%;
+    text-align: left;
+    margin: 1vh;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.pergunta button:hover{
+    background: #0538c5;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2vh 1vw;
+    width: 50%;
+}
+
+.container_p .finalizar{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: #0538c5;
+    color: white;
+    margin: 5vh 0;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.container_p .finalizar:hover{
+    transform: translateY(-10%)
+}

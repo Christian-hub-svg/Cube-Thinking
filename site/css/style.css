@@ -141,7 +141,7 @@ a{
 }
 
 .div_seta img:hover{
-    transform: translateY(10%);
+    transform: translateX(10%);
 }
 
 /* CONHEÇA OS CUBOS */
