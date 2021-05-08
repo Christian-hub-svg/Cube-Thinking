@@ -1,0 +1,110 @@
+.fundo{
+    background-image:url(../img/fundo-cubos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 160vh;
+}
+
+.apr_cubos{
+    background: white;
+    width: 60%;
+    height: 115vh;
+    margin: 5vh auto;
+    padding: 5vh 3vw;
+    border-radius: 2rem;
+}
+
+.container_apr_cubos{
+    font-family: 'Rubik', sans-serif;
+    display:grid;
+    grid-template-areas:
+    "titulo titulo"
+    "imagem1 texto1"
+    "texto2 imagem2"
+    "imagem3 texto3";
+    row-gap: 5vh;
+    justify-content: center;
+}
+
+.container_apr_cubos .titulo{
+    grid-area: titulo;
+    font-size: 2rem;
+    font-weight: normal;
+    justify-self: center;
+    margin-bottom: 5vh;
+}
+
+.container_apr_cubos .img{
+    justify-self: center;
+    align-self: center;
+}
+
+.img img{
+    height: 30vh;
+}
+
+.container_apr_cubos .texto{
+    width: 25vw;
+}
+
+.container_apr_cubos .texto h3{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.container_apr_cubos .texto p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.container_apr_cubos .texto ul{
+    list-style: none;
+    margin: 1vh 0;
+}
+
+#img1{
+    grid-area: imagem1;
+}
+
+#texto1{
+    grid-area: texto1;
+}
+
+#img2{
+    grid-area: imagem2;
+}
+
+#texto2{
+    grid-area: texto2;
+}
+
+#img3{
+    grid-area: imagem3;
+}
+
+#img3 img{
+    height: 25vh;
+}
+
+#texto3{
+    grid-area: texto3;
+}
+
+#pyramix{
+    height: 28vh;
+}
+
+#square{
+    height: 28vh
+}
+
+#gear3x3{
+    height: 25vh;
+}
+
+#gear2x2{
+    height: 25vh;
+    transform: rotate(4deg)
+}
