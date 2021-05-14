@@ -4,13 +4,13 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 160vh;
+    height: 180vh;
 }
 
 .apr_cubos{
     background: white;
     width: 60%;
-    height: 115vh;
+    height: 130vh;
     margin: 5vh auto;
     padding: 5vh 3vw;
     border-radius: 2rem;

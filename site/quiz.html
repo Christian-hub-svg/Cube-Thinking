@@ -16,51 +16,69 @@
         <div class="container_intro">
             <a href="index.html"><img src="img/cube-thinking1.png" alt="logo"></a>
             <h1>Bem vindo ao quiz!</h1>
-            <h2>Aqui você responderá algumas perguntas para saber qual cubo mais combina com você!</h2>
+            <h2>Responda perguntas sobre o mundo do cubo mágico e veja seu nível de conhecimento!</h2>
         </div>
         <!-- container das perguntas -->
         <div class="container_p">
             <div class="pergunta">
-                <h1>1 - Qual o seu sexo?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>Qual o seu nome?</h1>
+                <input type="text" id="id_nome" placeholder="Nome ou apelido">
             </div>
             <div class="pergunta">
-                <h1>2 - Você é uma pessoa impaciênte?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>1 - Quantas faces e vértices possui um cubo 3x3x3? (1 ponto)</h1>
+                <button onclick="btn1()" id="id_btn1">5 faces e 4 vértices</button><br>
+                <button onclick="btn2()" id="id_btn2">4 faces e 8 vértices</button><br>
+                <button onclick="btn3()" id="id_btn3">5 faces e 4 vértices</button><br>
+                <button onclick="btn4()" id="id_btn4">6 faces e 8 vértices</button>
             </div>
             <div class="pergunta">
-                <h1>1 - Qual o seu sexo?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>2 - Quantas combinações possíveis existem para um cubo 3x3x3? (2 pontos)</h1>
+                <button onclick="btn5()" id="id_btn5">40 bilhões</button><br>
+                <button onclick="btn6()" id="id_btn6">40 trilhões</button><br>
+                <button onclick="btn7()" id="id_btn7">40 quadrilhões</button><br>
+                <button onclick="btn8()" id="id_btn8">40 quintilhões</button><br>
             </div>
             <div class="pergunta">
-                <h1>1 - Qual o seu sexo?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>3 - Qual o nome do criador do cubo mágico? (1 ponto)</h1>
+                <button onclick="btn9()" id="id_btn9">Rubens Rubik</button><br>
+                <button onclick="btn10()" id="id_btn10">Erno Rubik</button><br>
+                <button onclick="btn11()" id="id_btn11">Rubik Jhonson</button><br>
+                <button onclick="btn12()" id="id_btn12">Rubik Sthefan</button>
             </div>
             <div class="pergunta">
-                <h1>1 - Qual o seu sexo?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>4 - Qual nome desse quebra cabeça? (3 pontos)</h1>
+                <img src="img/pergunta4.jpg" style="height: 15vh;"><br>
+                <button onclick="btn13()" id="id_btn13">Square-1</button><br>
+                <button onclick="btn14()" id="id_btn14">Crazy-1</button><br>
+                <button onclick="btn15()" id="id_btn15">Crazy Cube</button><br>
+                <button onclick="btn16()" id="id_btn16">Square Cube</button>
             </div>
             <div class="pergunta">
-                <h1>1 - Qual o seu sexo?</h1>
-                <button>Masculino</button><br>
-                <button>Feminino</button><br>
-                <button>Prefiro não dizer</button>
+                <h1>5 - O recorde mundial batido por Feliks Zemdegs foi de: (1 ponto)</h1>
+                <button onclick="btn17()" id="id_btn17">3.46 segundos</button><br>
+                <button onclick="btn18()" id="id_btn18">3.93 segundos</button><br>
+                <button onclick="btn19()" id="id_btn19">4.22 segundos</button><br>
+                <button onclick="btn20()" id="id_btn20">4.55 segundos</button>
             </div>
-            <button class="finalizar">Finalizar</button>
+            <div class="pergunta">
+                <h1>6 - Quantos cubos participam de competições pela WCA? <br>
+                    (World Cube Association) (2 pontos)</h1>
+                <button onclick="btn21()" id="id_btn21">9 cubos</button><br>
+                <button onclick="btn22()" id="id_btn22">11 cubos</button><br>
+                <button onclick="btn23()" id="id_btn23">13 cubos</button><br>
+                <button onclick="btn24()" id="id_btn24">17 cubos</button>
+            </div>
+
+            <button onclick="finalizar()" class="finalizar">Finalizar</button>
+            <br><br>
+
+            <div id="id_mens_final"></div>
+
         </div>
     </div>
 
 
     
 </body>
+<script src="js/quiz.js"></script>
 </html>
