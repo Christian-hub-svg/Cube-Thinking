@@ -9,6 +9,8 @@ function btn1(){
     id_btn4.style.background = `#45d80bb6`;
 
     pontos += 0;
+
+    resposta_1.innerHTML = `<img src="../img/resposta1.png" style="height: 20vh;">`;
 }
 function btn2(){
     id_btn1.disabled = true;
@@ -17,6 +19,7 @@ function btn2(){
     id_btn4.style.background = `#45d80bb6`;
 
     pontos += 0;
+    resposta_1.innerHTML = `<img src="../img/resposta1.png" style="height: 20vh;">`;
 }
 function btn3(){
     id_btn1.disabled = true;
@@ -25,6 +28,7 @@ function btn3(){
     id_btn4.style.background = `#45d80bb6`;
 
     pontos += 0;
+    resposta_1.innerHTML = `<img src="../img/resposta1.png" style="height: 20vh;">`;
 }
 function btn4(){
     id_btn1.disabled = true;
@@ -33,6 +37,7 @@ function btn4(){
     id_btn4.style.background = `#45d80bb6`;
 
     pontos += 1;
+    resposta_1.innerHTML = `<img src="../img/resposta1.png" style="height: 20vh;">`;
 }
 
 
@@ -44,6 +49,7 @@ function btn5(){
     id_btn8.style.background = `#45d80bb6`;
 
     pontos += 0;
+    resposta_2.innerHTML = `<img src="../img/resposta2.png" style="height: 20vh;">`;
 }
 function btn6(){
     id_btn5.disabled = true;
@@ -52,6 +58,7 @@ function btn6(){
     id_btn8.style.background = `#45d80bb6`;
 
     pontos += 0;
+    resposta_2.innerHTML = `<img src="../img/resposta2.png" style="height: 20vh;">`;
 }
 function btn7(){
     id_btn5.disabled = true;
@@ -60,6 +67,7 @@ function btn7(){
     id_btn8.style.background = `#45d80bb6`;
 
     pontos += 0;
+    resposta_2.innerHTML = `<img src="../img/resposta2.png" style="height: 20vh;">`;
 }
 function btn8(){
     id_btn5.disabled = true;
@@ -68,6 +76,7 @@ function btn8(){
     id_btn8.style.background = `#45d80bb6`;
 
     pontos += 2;
+    resposta_2.innerHTML = `<img src="../img/resposta2.png" style="height: 20vh;">`;
 }
 
 
@@ -79,6 +88,9 @@ function btn9(){
     id_btn12.disabled = true;
 
     pontos += 0;
+    resposta_3.innerHTML = `<img src="../img/resposta3.png" style="height: 20vh;"><br>
+    Erno Rubikem criou o cubo mágico em 1974 quando estava interessado em geometria, 
+    especialmente formas tridimensionais e sua construção.`;
 }
 function btn10(){
     id_btn9.disabled = true;
@@ -87,6 +99,9 @@ function btn10(){
     id_btn12.disabled = true;
 
     pontos += 1;
+    resposta_3.innerHTML = `<img src="../img/resposta3.png" style="height: 20vh;"><br>
+    Erno Rubikem criou o cubo mágico em 1974 quando estava interessado em geometria, 
+    especialmente formas tridimensionais e sua construção.`;
 }
 function btn11(){
     id_btn9.disabled = true;
@@ -95,6 +110,9 @@ function btn11(){
     id_btn12.disabled = true;
 
     pontos += 0;
+    resposta_3.innerHTML = `<img src="../img/resposta3.png" style="height: 20vh;"><br>
+    Erno Rubikem criou o cubo mágico em 1974 quando estava interessado em geometria, 
+    especialmente formas tridimensionais e sua construção.`;
 }
 function btn12(){
     id_btn9.disabled = true;
@@ -103,6 +121,9 @@ function btn12(){
     id_btn12.style.background = '#f30b0bb6';
 
     pontos += 0;
+    resposta_3.innerHTML = `<img src="../img/resposta3.png" style="height: 20vh;"><br>
+    Erno Rubikem criou o cubo mágico em 1974 quando estava interessado em geometria, 
+    especialmente formas tridimensionais e sua construção.`;
 }
 
 //pergunta 4
@@ -148,6 +169,8 @@ function btn17(){
     id_btn20.disabled = true;
 
     pontos += 0;
+    resposta_5.innerHTML = `<img src="../img/resposta5.png" style="height: 20vh;"><br>
+    Essa marca foi alcançada em maio de 2018 e até hoje não foi batida.`;
 }
 function btn18(){
     id_btn17.disabled = true;
@@ -156,6 +179,8 @@ function btn18(){
     id_btn20.disabled = true;
 
     pontos += 0;
+    resposta_5.innerHTML = `<img src="../img/resposta5.png" style="height: 20vh;"><br>
+    Essa marca foi alcançada em maio de 2018 e até hoje não foi batida.`;
 }
 function btn19(){
     id_btn17.disabled = true;
@@ -164,6 +189,8 @@ function btn19(){
     id_btn20.disabled = true;
 
     pontos += 1;
+    resposta_5.innerHTML = `<img src="../img/resposta5.png" style="height: 20vh;"><br>
+    Essa marca foi alcançada em maio de 2018 e até hoje não foi batida.`;
 }
 function btn20(){
     id_btn17.disabled = true;
@@ -172,41 +199,47 @@ function btn20(){
     id_btn20.style.background = '#f30b0bb6';
 
     pontos += 0;
+    resposta_5.innerHTML = `<img src="../img/resposta5.png" style="height: 20vh;"><br>
+    Essa marca foi alcançada em maio de 2018 e até hoje não foi batida.`;
 }
 
 
 //pergunta 6
 function btn21(){
-    id_btn21.style.background = `#45d80bb6`;
-    id_btn22.disabled = true;
+    id_btn21.style.background = '#f30b0bb6';
+    id_btn22.style.background = `#45d80bb6`;
+    id_btn23.disabled = true;
+    id_btn24.disabled = true;
+
+    pontos += 0;
+    resposta_6.innerHTML = `<img src="../img/resposta6.png" style="height: 20vh;">`;
+}
+function btn22(){
+    id_btn21.disabled = true;
+    id_btn22.style.background = `#45d80bb6`;
     id_btn23.disabled = true;
     id_btn24.disabled = true;
 
     pontos += 2;
-}
-function btn22(){
-    id_btn21.style.background = `#45d80bb6`;
-    id_btn22.style.background = '#f30b0bb6';
-    id_btn23.disabled = true;
-    id_btn24.disabled = true;
-
-    pontos += 0;
+    resposta_6.innerHTML = `<img src="../img/resposta6.png" style="height: 20vh;">`;
 }
 function btn23(){
-    id_btn21.style.background = `#45d80bb6`;
-    id_btn22.disabled = true;
+    id_btn21.disabled = true;
+    id_btn22.style.background = `#45d80bb6`;
     id_btn23.style.background = '#f30b0bb6';
     id_btn24.disabled = true;
 
     pontos += 0;
+    resposta_6.innerHTML = `<img src="../img/resposta6.png" style="height: 20vh;">`;
 }
 function btn24(){
-    id_btn21.style.background = `#45d80bb6`;
-    id_btn22.disabled = true;
+    id_btn21.disabled = true;
+    id_btn22.style.background = `#45d80bb6`;
     id_btn23.disabled = true;
     id_btn24.style.background = '#f30b0bb6';
 
     pontos += 0;
+    resposta_6.innerHTML = `<img src="../img/resposta6.png" style="height: 20vh;">`;
 }
 
 
