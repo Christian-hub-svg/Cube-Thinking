@@ -272,11 +272,10 @@ function finalizar(){
     
 
     id_mens_final.innerHTML =
-    `<h1 style="font-weight: 300;">${nome}, você fez ${pontos} pontos!</h1><br>
-    <img src="${imagem}" style="height: 20vh">
+    `<h1 style="font-weight: 300;">${nome}, você fez ${pontos} pontos!</h1>
+    <img src="${imagem}" style="height: 20vh"><br>
     
-    <h3 style="font-weight: 300;">${mensagem}</h3>
-    `;
+    <h3 style="font-weight: 300;">${mensagem}</h3>`;
 
 }
 

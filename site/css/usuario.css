@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Rubik', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f0f0f0;
+    font-family: 'Rubik', sans-serif;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a{
+    color:black;
+}
+
+
+/* MENU */
+.menu{
+    background: #16A6F8;
+    padding: 2vh;
+    height: 12vh;
+}
+
+.container_menu{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.container_menu img{
+    height: 12vh;
+    float: left;
+}
+
+.container_menu ul{
+    list-style: none;
+    float: right;
+}
+
+.container_menu li{
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 1vh 1vw;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container_menu li+li{
+    margin-left: 2vw;
+}
+
+.container_menu li:hover{
+    background: white;
+    transform: translateY(-5%);
+}
+
+/* CONTEUDO */
+.conteudo{
+    height: 100vh;
+}
+
+
+/* CRONOMETRO */
+.cronometro{
+    height: 100vh;
+    width: 50%;
+    float: left;
+    padding: 10vh 0;
+}
+
+.conteudo h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.conteudo hr{
+    height: 1vh;
+    width: 6vw;
+    background: red;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.relogio{
+    height: 35vh;
+}
+
+.conteudo span{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.conteudo span+span{
+    margin-left: 5vw;
+}
+
+.conteudo button{
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1vh 1vw;
+    margin-top: 3vh;
+    background: #18E114;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.conteudo button:hover{
+    transform: translateX(5%);
+}
+
+/* SORTEIO */
+.sorteio{
+    padding: 10vh 0;
+}
+
+#aleatorio{
+    height: 30vh;
+}
+
+
+/* RODAPÉ */
+.rodape{
+    height: 20vh;
+    background-image: url(../img/rodape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.rodape h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 5vh;
+}
+
+.rodape h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 3vh;
+}
+
+.rodape .email{
+    padding: 0;
+}
