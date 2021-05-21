@@ -202,10 +202,15 @@ a{
     height: 12vh;
     cursor: pointer;
     transition: 1s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
 }
 
 .div_cubos img:hover{
     transform: rotate(45deg);
+    -webkit-filter: none;
+    filter: none;
 }
 
 .div_cubos .piramix{

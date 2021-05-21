@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* font-family: 'Rubik', sans-serif; */
+/* font-family: 'Exo 2', sans-serif; */
 
 *{
     margin: 0;
@@ -69,14 +71,7 @@ a{
 }
 
 
-/* CRONOMETRO */
-.cronometro{
-    height: 100vh;
-    width: 50%;
-    float: left;
-    padding: 10vh 0;
-}
-
+/* CONTEUDO */
 .conteudo h1{
     font-weight: 300;
     font-size: 2.5rem;
@@ -88,10 +83,6 @@ a{
     background: red;
     border: none;
     border-radius: 0.5rem;
-}
-
-.relogio{
-    height: 35vh;
 }
 
 .conteudo span{
@@ -115,9 +106,38 @@ a{
     transition: 0.5s;
 }
 
-.conteudo button:hover{
+#id_historico:hover{
     transform: translateX(5%);
 }
+
+/* CRONOMETRO */
+.cronometro{
+    height: 100vh;
+    width: 50%;
+    float: left;
+    padding: 10vh 0;
+}
+
+.relogio{
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin: 10vh auto 5vh auto;   
+}
+
+.relogio h1{
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.relogio button{
+    background: white;
+    transform: none;
+}
+
+.relogio button:hover{
+    background: #e4a105;
+}
+
 
 /* SORTEIO */
 .sorteio{

@@ -28,13 +28,14 @@
                 <h1>Cronômetro</h1>
                 <hr>
 
-                <div class="relogio"></div>
+                <div class="relogio">
+                    <h1 id="counter">00:00:00</h1>
+                    <button onclick="iniciar()" id="id_iniciar">Iniciar</button>
+                    <button onclick="parar()" id="id_parar">Parar</button>
+                    <button onclick="reiniciar()" id="id_reiniciar">Reiniciar</button>
+                </div>
 
-                <span>Melhor tempo: <span>00:00</span></span>
-                <span>Média: <span>00:00</span></span>
-                <br>                
-
-                <button>Histórico completo</button>
+                <button id="id_historico">Histórico completo</button>
             </div>
 
 
@@ -62,4 +63,5 @@
     <!-- FIM RODAPÉ -->
     
 </body>
+<script src="js/cronometro.js"></script>
 </html>
