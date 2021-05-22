@@ -76,7 +76,7 @@ a{
 }
 
 .conteudo hr{
-    height: 1vh;
+    height: 0.5vh;
     width: 6vw;
     background: red;
     border: none;

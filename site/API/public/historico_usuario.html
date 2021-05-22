@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="css/historico.css">
+    <link rel="icon" type="imagem/png" href="img/cube-thinking_no_text.png" />
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+    integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+    crossorigin="anonymous">
+    
+    </script>
+    <title>Histórico</title>
+</head>
+<body>
+
+    <!-- MENU -->
+    <div class="menu">
+        <div class="container_menu">
+            <img src="img/cube-thinking1.png" alt="Logo">
+            <ul>
+                <a href="tela-usuario.html"><li>Tela inicial</li></a>
+                <a href="index.html"><li>Sair</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTEUDO -->
+    <div class="conteudo">
+        <div class="grafico">
+            <h1>Gráfico de resoluções</h1>
+            <hr>
+            <div>
+                <canvas id="chart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="tabela_historico">
+            <h1>Histórico</h1>
+            <hr>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Tempo</th>
+                    <th>Sorteio</th>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td id="id_a">00:45:95</td>
+                    <td>B'  U  R  D  F  L  R'  D  U  F'  R'  F
+                        D  L  D'  R'  D  R'  B  U  L  B  U</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td id="id_a">00:45:50</td>
+                    <td>B'  U  R  D  F  L  R'  D  U  F'  R'  F
+                        D  L  D'  R'  D  R'  B  U  L  B  U</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td id="id_a">00:45:12</td>
+                    <td>B'  U  R  D  F  L  R'  D  U  F'  R'  F
+                        D  L  D'  R'  D  R'  B  U  L  B  U</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td id="id_a">00:45:34</td>
+                    <td>B'  U  R  D  F  L  R'  D  U  F'  R'  F
+                        D  L  D'  R'  D  R'  B  U  L  B  U</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>00:45:91</td>
+                    <td>B'  U  R  D  F  L  R'  D  U  F'  R'  F
+                        D  L  D'  R'  D  R'  B  U  L  B  U</td>
+                </tr>
+            </table>
+        </div> 
+    </div>
+    
+    
+</body>
+</html>
+
+
+<script>
+
+    var a = (Math.random() * 59).toFixed(2);
+    var b = (Math.random() * 59).toFixed(2);
+    var c = (Math.random() * 59).toFixed(2);
+    var d = (Math.random() * 59).toFixed(2);
+    var e = (Math.random() * 59).toFixed(2);
+
+    //Contexto do canvas: 2D
+    var ctx = chart.getContext('2d');
+
+    var myChart = new Chart(ctx, {
+
+        type: 'line',
+        data: {
+            labels: ['16', '17', '18', '19', '20'],
+            datasets: [{
+                label: 'id X tempo(seg)',
+                data: [a, b, c, d, e],
+                backgroundColor: ['blue'],
+                borderWidth: 2,
+                borderColor: ['blue']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'bottom',
+            },
+            }
+        },
+    });
+
+    // id_a.innerHTML = `00:${a}:95`;
+    // id_b.innerHTML = `00:${b}:50`;
+    // id_c.innerHTML = `00:${c}:12`;
+    // id_d.innerHTML = `00:${d}:34`;
+    // id_e.innerHTML = `00:${e}:91`;
+
+
+</script>

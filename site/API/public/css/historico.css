@@ -1,0 +1,45 @@
+.conteudo{
+    max-width: 50%;
+    margin: 10vh auto;
+}
+
+.conteudo h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.conteudo hr{
+    height: 0.5vh;
+    width: 15vw;
+    background: green;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 3vh;
+}
+
+.grafico{
+    margin-bottom: 7vh;
+}
+
+
+
+.tabela_historico hr{
+    width: 7vw;
+}
+
+.tabela_historico table{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.tabela_historico th{
+    padding: 1vh 0;
+    background: orange;
+}
+
+.tabela_historico td{
+    padding: 1vh 3vw;
+    background: white;
+}
