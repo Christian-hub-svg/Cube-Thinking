@@ -36,13 +36,14 @@
     padding: 0.5vh 1vw;
 }
 
-.container_login .senha{
+#id_senha{
     width: 30%;
 }
 
-.container_login button{
+.container_login .botao{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 1.2rem;
     border: 2px solid black;
     border-radius: 10px;
@@ -54,6 +55,6 @@
     transition: 0.5s;
 }
 
-.container_login button:hover{
+.container_login .botao:hover{
     background: #EE7A26;
 }

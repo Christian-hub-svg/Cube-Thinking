@@ -2,10 +2,10 @@ module.exports = {
   // Insira aqui seus dados do banco NA NUVEM AZURE
   production: {
     // altere APENAS username, password, database e host.
-    username: 'lettutech',
-    password: 'cristopher_123',
-    database: 'database-iot',
-    host: 'serv-gp2-lettutech.database.windows.net',
+    username: 'cube-thinking',
+    password: 'Christian_123',
+    database: 'cube-thinking',
+    host: 'cube-thinking.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
