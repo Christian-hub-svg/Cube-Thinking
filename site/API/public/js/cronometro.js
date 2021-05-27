@@ -14,12 +14,13 @@ function iniciar(){
     //setInterval serve para executar determinada função em x tempo
     //no caso ele chama a função timer a cada 0,01 seg
     cron = setInterval(() => { timer(); }, tempo);
+    id_iniciar.disabled = true;
 }
 
 function parar(){
     //parando o setInterval 
     clearInterval(cron);
-
+    id_iniciar.disabled = false;
 }
 
 function reiniciar(){
@@ -30,6 +31,8 @@ function reiniciar(){
     ms = 0;
 
     document.getElementById('counter').innerHTML = '00:00:00';
+
+    id_iniciar.disabled = false;
 }
 
 function timer(){

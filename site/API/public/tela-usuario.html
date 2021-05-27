@@ -16,14 +16,16 @@
             <img src="img/cube-thinking1.png" alt="Logo">
             <ul>
                 <a href="historico_usuario.html"><li>Histórico</li></a>
-                <a href="index.html"><li>Sair</li></a>
+                <a href="#" onclick="logoff()"><li>Sair</li></a>
             </ul>
         </div>
     </div>
 
     <!-- CONTEUDO -->
     <div class="conteudo">
-        <div class="container_menu">
+        <div class="container_usuario">
+            <h1>Bem vindo <b id="b_usuario"></b> id: <b id="b_id"></b></h1>
+            <br><br>
             <!-- CRONOMETRO -->
             <div class="cronometro">
                 <h1>Cronômetro</h1>
@@ -35,10 +37,7 @@
                     <button onclick="parar()" id="id_parar">Parar</button>
                     <button onclick="reiniciar()" id="id_reiniciar">Reiniciar</button>
                 </div>
-
-                <a href="historico-usuario.html"><button id="id_historico">Histórico completo</button></a>
             </div>
-
 
             <!-- SORTEIO -->
             <div class="sorteio">
@@ -50,25 +49,61 @@
                         B'  U  R  D  F  L  R'  D  U  F'  R'  F
                         D  L  D'  R'  D  R'  B  U  L  B  U
                     </h1>
+                    <button onclick="sortear()">Novo embaralhamento</button>
                 </div>
-
-                <button onclick="sortear()">Novo embaralhamento</button>
-
             </div>
+
+            <div class="divisor"></div>
+
+            <div class="formulario">
+                <form id="form_inserir">
+                    <h1>Registrar resolução:</h1>
+                    Digite seu ID:
+                    <input id="id_usuario" placeholder="Seu ID" name="id">
+                    <select name="cubo" class="select_cubo">
+                        <option value="1">2x2x2</option>
+                        <option value="2">3x3x3</option>
+                        <option value="3">4x4x4</option>
+                        <option value="4">Pyramix</option>
+                        <option value="5">Megamix</option>
+                        <option value="6">Outro</option>
+                    </select>
+                    <br>
+                    Digite seu tempo:
+                    <input id="id_tempo" placeholder="MIN:SEG:MS" name="tempo">
+                    <br><br>
+                    Digite o sorteio (opcional):
+                    <input id="id_tempo" placeholder="R2 B' L2 ..." name="sorteio">
+                    <br>
+        
+                    <button id="id_inserir" onclick="inserir_dados()">Registrar resolução</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
-    <!-- RODAPÉ -->
-    <div class="rodape">
-        <h2>
-            Criado por Christian Hitoshi - Aluno Bandtec
-        </h2>
-        <h1>Contato</h1>
-        <h2 class="email">christian.hamai@bandtec.com.br</h2>
-    </div>
-    <!-- FIM RODAPÉ -->
-    
 </body>
 <script src="js/cronometro.js"></script>
 <script src="js/sorteio.js"></script>
+<script src="js/funcoes.js"></script>
 </html>
+
+<script>
+
+    verificar_autenticacao();
+
+    function inserir_dados() {
+
+        var formulario = new URLSearchParams(new FormData(form_inserir));
+        fetch("/historicos/inserir", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {     
+            if (response.ok) {
+                alert('Registro inserido!');                     
+            }
+        });
+    }
+
+</script>

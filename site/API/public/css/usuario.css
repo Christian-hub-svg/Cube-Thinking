@@ -67,7 +67,7 @@ a{
 
 /* CONTEUDO */
 .conteudo{
-    height: 100vh;
+    height: 76vh;
 }
 
 .conteudo h1{
@@ -104,16 +104,16 @@ a{
     transition: 0.5s;
 }
 
-#id_historico:hover{
-    transform: translateX(5%);
+.container_usuario{
+    max-width: 70%;
+    margin: 8vh auto;
 }
 
 /* CRONOMETRO */
 .cronometro{
-    height: 100vh;
+    height: 30vh;
     width: 50%;
     float: left;
-    padding: 10vh 0;
 }
 
 .relogio{
@@ -138,39 +138,40 @@ a{
 
 
 /* SORTEIO */
-.sorteio{
-    padding: 10vh 0;
-}
-
 .aleatorio{
     margin: 10vh 0;
 }
 
-/* RODAPÉ */
-.rodape{
-    height: 20vh;
-    background-image: url(../img/rodape.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.divisor{
+    width: 100%;
+    background: black;
+    height: 2px;
+}
+
+/* FORMULARIO */
+.formulario{
     text-align: center;
+    font-size: 1.5rem;
+    margin: 2vh 0;
 }
 
-.rodape h2{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-    color: white;
-    padding-top: 5vh;
+.formulario h1{
+    font-size: 2rem;
 }
 
-.rodape h1{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: white;
-    padding-top: 3vh;
+.formulario input{
+    width: 10vw;
+    height: 3vh;
+    border-radius:0.5rem;
+    background-color: transparent;
+    border: 0.5px solid #202020;
+    padding: 0 0 0 0.5vw;
 }
 
-.rodape .email{
-    padding: 0;
+.select_cubo{
+    padding: 0.5vh 1vw;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin: 2vh 0;
 }
