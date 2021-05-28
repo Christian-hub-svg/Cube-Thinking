@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
-		},	
+		},
+		
 		temperatura: {
 			field: 'temperatura',
 			type: DataTypes.REAL,

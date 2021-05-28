@@ -34,14 +34,14 @@ where fk_usuario = 100 order by id_historico desc limit 5;
 
 -- CRIAÇÃO DE DADOS SQL SERVER
 create table usuario_chris(
-	id_usuario INT IDENTITY,
+	id_usuario int identity_insert primary key,
     nome varchar(45),
     email varchar(50),
 	senha varchar(15)
 );
 
 create table cubos_chris(
-	id_cubo int identity,
+	id_cubo int primary key,
     descricao varchar(50)
 );
 
@@ -64,3 +64,23 @@ insert into cubos_chris values
 (4, 'Pyramix'),
 (5, 'Megamix'),
 (6, 'Outro');
+
+insert into usuario_chris (nome, email, senha)values
+('Christian', 'chris@gmail.com', 'chris123'),
+('Giulia', 'giulia@gmail.com', 'giu123'),
+('Jhonattan', 'jhonattan@gmail.com', 'jhonny123'),
+('Bryan', 'bria@gmail.com', 'bria123'),
+('Mayra', 'mayra@gmail.com', 'mayra123'),
+('Ian', 'ian@gmail.com', 'ian123');
+
+insert into historico_chris (fk_usuario, fk_cubo, tempo, sorteio)values
+(1, 2, '00:33:41', null),
+(1, 2, '00:31:05', null),
+(1, 2, '00:30:00', null),
+(1, 2, '00:35:00', null),
+(1, 2, '00:41:12', null),
+(1, 2, '00:29:01', null),
+(2, 6, '04:13:00', null),
+(3, 1, '00:04:00', null),
+(4, 5, '05:07:00', null),
+(5, 5, '00:06:00', null);

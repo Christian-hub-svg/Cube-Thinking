@@ -29,17 +29,17 @@
 
     <!-- CONTEUDO -->
     <div class="conteudo">
-        <h1>Bem vindo <b id="b_usuario"></b> id: <b id="b_id"></b></h1>
-        <br><br>
         <div class="grafico">
             <h1>Gráfico de resoluções</h1>
             <hr>
             <div>
                 <canvas id="chart" width="400" height="200"></canvas>
             </div>
+
+            <button onclick="obterDadosGraficoPrimeiraVez()">Ver gráfico!</button>
         </div>
 
-        <div class="tabela_historico">
+        <!-- <div class="tabela_historico">
             <h1>Histórico</h1>
             <hr>
             Digite o id de quem quer ver o histórico:
@@ -84,6 +84,7 @@
                 </tr>
             </table>
         </div> 
+         -->
     </div>
     
     
@@ -141,15 +142,14 @@
 
     verificar_autenticacao();
 
-    var id = Number(id_pesquisa.value);
     let proximaAtualizacao;
 
-    window.onload = obterDadosGraficoPrimeiraVez(id);
+    window.onload = obterDadosGraficoPrimeiraVez();
 
 
-    function chamargraficos(id) {
+    function chamargraficos() {
         console.log("executei chamargraficos")
-        obterDadosGraficoPrimeiraVez(id)
+        obterDadosGraficoPrimeiraVez()
         //atualizarGrafico(id)
 
     }
@@ -160,11 +160,13 @@
         console.log("executei configurarGrafico")
         var configuracoes = {
             responsive: true,
-            plugins: {
-            legend: {
-                position: 'bottom',
+            animation: { duration: 500 },
+            hoverMode: 'index',
+            stacked: false,
+            title: {
+                display: true,
+                text: 'Histórico recente do usuario'
             },
-            }
         };
 
         return configuracoes;
@@ -172,14 +174,20 @@
 
     // altere aqui como os dados serão exibidos
     // e como são recuperados do BackEnd
-    function obterDadosGraficoPrimeiraVez(id) {
-        console.log("executei obterDadosGraficoPrimeiraVez")
+    function obterDadosGraficoPrimeiraVez() {
+        console.log("executei obterDadosGraficoPrimeiraVez");
 
-        fetch(`/leituras/ultimas/${id}`, { cache: 'no-store' }).then(function (response) {
+        var id_usuario_agora = sessionStorage.getItem("id_usuario_meuapp");
+
+        // if (proximaAtualizacao != undefined) {
+        //     clearTimeout(proximaAtualizacao);
+        // }
+
+        fetch(`/leituras/ultimas/${id_usuario_agora}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                    resposta.reverse();
+                    // resposta.reverse();
 
                     var dados = {
                         labels: [],
@@ -200,8 +208,8 @@
 
                     }
                     console.log(JSON.stringify(dados));
-                    div_aguarde.style.display = 'none';
-                    plotarGrafico(dados, id);
+                    // div_aguarde.style.display = 'none';
+                    plotarGrafico(dados);
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -214,12 +222,12 @@
     }
 
     // só altere aqui se souber o que está fazendo!
-    function plotarGrafico(dados, id) {
+    function plotarGrafico(dados) {
         console.log("executei plotarGrafico")
         console.log('iniciando plotagem do gráfico...');
 
         var ctx = chart.getContext('2d');
-        var myChart = new Chart(ctx, {
+        window.grafico_linha = Chart.Line(ctx, {
             data: dados,
             options: configurarGrafico()
         });
