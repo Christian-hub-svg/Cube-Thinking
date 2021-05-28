@@ -57,7 +57,7 @@ create table historico_chris(
 
 
 -- INSERÇÃO DE DADOS
-insert into cubos values
+insert into cubos_chris values
 (1, '2x2x2'),
 (2, '3x3x3'),
 (3, '4x4x4'),

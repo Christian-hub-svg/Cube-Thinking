@@ -16,7 +16,6 @@ function verificar_autenticacao() {
     } else {
         b_usuario.innerHTML = nome_usuario;
         b_id.innerHTML = id_usuario;
-        validar_sessao();
     }
     
 }

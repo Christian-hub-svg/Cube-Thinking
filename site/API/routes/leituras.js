@@ -5,12 +5,12 @@ var Leitura = require('../models').Leitura;
 var env = process.env.NODE_ENV || 'development';
 
 /* Recuperar as últimas N leituras */
-router.get('/ultimas/:idcaminhao', function(req, res, next) {
+router.get('/ultimas/:id_usuario', function(req, res, next) {
 	
 	// quantas são as últimas leituras que quer? 7 está bom?
-	const limite_linhas = 7;
+	const limite_linhas = 5;
 
-	var idcaminhao = req.params.idcaminhao;
+	var id = req.params.id;
 
 	console.log(`Recuperando as ultimas ${limite_linhas} leituras`);
 	
@@ -18,14 +18,12 @@ router.get('/ultimas/:idcaminhao', function(req, res, next) {
 
 	if (env == 'dev') {
 		// abaixo, escreva o select de dados para o Workbench
-		instrucaoSql = `select 
-		temperatura, 
-		umidade, 
-		momento,
-		DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico
-		from leitura
-		where fkcaminhao = ${idcaminhao}
-		order by id desc limit ${limite_linhas}`;
+		instrucaoSql = `select
+		id_historico,
+		tempo
+		from historico_chris
+		where fk_usuario = ${id}
+		order by id_historico desc limit ${limite_linhas};`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `select top ${limite_linhas} 
