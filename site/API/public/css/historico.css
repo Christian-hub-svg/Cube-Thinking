@@ -22,6 +22,10 @@
 }
 
 
+.tabela_historico{
+    padding: 5vh 0;
+}
+
 
 .tabela_historico hr{
     width: 7vw;
@@ -31,7 +35,7 @@
     text-align: center;
     font-weight: 300;
     font-size: 1.2rem;
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 
 .tabela_historico th{
